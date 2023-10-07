@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CountdownActivity">
+
+<TextView
+    android:id="@+id/text_view_countdown"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="00:00"
+    android:textSize="60sp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="16dp"
+    android:textStyle="bold"/>
+
+<Button
+    android:id="@+id/start_countdown_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Start"
+    android:layout_gravity="center"
+    android:layout_marginBottom="8dp"
+    android:layout_marginHorizontal="16dp"/>
+<Button
+    android:id="@+id/pause_countdown_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Pause"
+    android:layout_gravity="center"
+    android:layout_marginBottom="8dp"
+    android:layout_marginHorizontal="16dp"/>
+
+    <Button
+        android:id="@+id/reset_countdown_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="16dp"/>
+
+
+</LinearLayout>
