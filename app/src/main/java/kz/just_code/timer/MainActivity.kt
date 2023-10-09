@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("seconds", seconds)
                 startActivity(intent)
             } else {
-                inputSeconds.error = "Please enter seconds"
+                Toast.makeText(this, "You need to input seconds", Toast.LENGTH_SHORT).show()
             }
         }
     }
